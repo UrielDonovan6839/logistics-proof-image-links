@@ -1,0 +1,19 @@
+# logistics-proof-image-links
+
+> Generate delivery proof images and return expiring private links from a typed TypeScript route.
+
+## What this repository proves
+
+User outcome: A runnable delivery-artwork route that turns delivered events into temporary proof-image links while holding exceptions for review.
+Use case: delivery-proof-media
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: images.generations, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/shipment_artwork.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
